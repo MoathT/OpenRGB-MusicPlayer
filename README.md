@@ -5,8 +5,9 @@ Before running the script, ensure you have:
 OpenRGB installed and working with your RGB hardware.
 
 Python 3.x installed (if running the source code directly).
----------------------------------------------------------------------
+
 Step-by-Step Setup
+-----------------------
 1. Enable OpenRGB SDK Server
 For the script to talk to OpenRGB, the SDK server must be running:
 
