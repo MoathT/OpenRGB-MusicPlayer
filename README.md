@@ -12,7 +12,7 @@ Before running the script, ensure you have:
 * **Python 3.x** installed (if running the `.py` source file directly).
 
 ---
-
+## BEFORE START MAKE SURE ALL OF YOUR PC LED ARE ON IN OPENRGB AND IN DIRECT MODE
 ## Step-by-Step Setup
 
 ### 1. Enable OpenRGB SDK Server
