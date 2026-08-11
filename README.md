@@ -4,6 +4,9 @@ A lightweight script that syncs **OpenRGB** with whatever music player is active
 
 ---
 
+SHOWCASE : <img width="2880" height="2160" alt="image" src="https://github.com/user-attachments/assets/ff1abb2e-e9b9-4620-a63c-4d004fc10f6d" />
+
+
 ## Prerequisites
 
 Before running the script, ensure you have:
@@ -52,3 +55,5 @@ The script reads active media information directly from Windows:
 
 * **Script creates `openrgb.log` but LEDs don't sync:** Verify that the **SDK Server** inside OpenRGB is active and running on port **`6742`**.
 * **Track info isn't updating:** Ensure your media player supports **Windows System Media Transport Controls**. Try pressing a volume key to see if the song overlay pops up.
+
+
