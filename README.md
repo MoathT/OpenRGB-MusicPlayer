@@ -8,8 +8,8 @@ A lightweight script that syncs **OpenRGB** with whatever music player is active
 
 Before running the script, ensure you have:
 
-* **OpenRGB** installed and set up with your RGB hardware.
-* **Python 3.x** installed (if running the `.py` source file directly).
+* **OpenRGB** installed and set up with your RGB hardware. https://openrgb.org/
+* **Python 3.x** installed (if running the `.py` source file directly). i used MC version 
 
 ---
 ##  ⚠️⚠️ BEFORE START MAKE SURE ALL OF YOUR PC LED ARE ON IN OPENRGB AND IN DIRECT MODE
