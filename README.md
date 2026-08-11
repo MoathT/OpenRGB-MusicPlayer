@@ -1,57 +1,54 @@
-Prerequisites
+# OpenRGB Media Sync
+
+A lightweight script that syncs **OpenRGB** with whatever music player is active on your system.
+
+---
+
+## Prerequisites
 
 Before running the script, ensure you have:
 
-OpenRGB installed and working with your RGB hardware.
+* **OpenRGB** installed and set up with your RGB hardware.
+* **Python 3.x** installed (if running the `.py` source file directly).
 
-Python 3.x installed (if running the source code directly).
+---
 
-Step-by-Step Setup
------------------------
-1. Enable OpenRGB SDK Server
-For the script to talk to OpenRGB, the SDK server must be running:
+## Step-by-Step Setup
 
-Open OpenRGB.
+### 1. Enable OpenRGB SDK Server
+For the script to talk to OpenRGB, the SDK server **must be running**:
 
-Go to the SDK Server tab at the top.
+1. Open **OpenRGB**.
+2. Go to the **SDK Server** tab at the top.
+3. Click **Start Server**.
+4. *(Optional)* Check **Set OpenRGB to start at login / launch** so you don't have to do this manually every time.
 
-Click Start Server.
+<img width="864" height="169" alt="OpenRGB SDK Server Tab" src="https://github.com/user-attachments/assets/72652173-8ff0-4ff2-a149-c828af07ab60" />
 
-(Optional) Check Start at launch so you don't have to do this manually every time.
+---
 
-<img width="864" height="169" alt="image" src="https://github.com/user-attachments/assets/72652173-8ff0-4ff2-a149-c828af07ab60" />
-
-
-2. Configure Windows Media Overlay
+### 2. Check Windows Media Overlay
 The script reads active media information directly from Windows:
 
-Open your preferred music player (Spotify, Apple Music, SoundCloud, etc.). --- browser are not supported i tested Brave only ------
+1. Open your preferred music player (**Spotify**, **Apple Music**, **SoundCloud**, etc.).
+   > **Note:** Web browsers (like **Brave**) are **not supported**. Use standalone apps.
+2. Play any track.
+3. Press your keyboard's volume keys to make sure the **Windows Media Control popup** appears showing the song title and album art.
+4. **Important:** If multiple apps are open, **click the right arrow icon** on the overlay until it switches to your current playing song.
 
-Play any track.
+<img width="382" height="197" alt="Windows Media Overlay" src="https://github.com/user-attachments/assets/3da0c49e-b1a0-40c9-bf06-b525b2986b42" />
 
-Use your keyboard's volume keys or media keys to verify that the Windows Media Control popup appears in the corner of your screen showing the song name and album art.
-<img width="382" height="197" alt="image" src="https://github.com/user-attachments/assets/3da0c49e-b1a0-40c9-bf06-b525b2986b42" />
+---
 
-CLICK IN THE ARROW RIGHT IF IT DIDNT SWITCH TO YOUR SONG
+### 3. Run the Script
 
+1. Download or clone this repository.
+2. Run `openrgb_Music.py`.
+3. The script will **automatically generate `openrgb.log`** in the same folder on its first run and start syncing.
 
+---
 
-3. Run the Script
-Clone or download this repository.
+## Troubleshooting
 
-Run openrgb_Music.py script file.
-
-The script will automatically create openrgb.log in the same directory on its first launch and begin monitoring your media playback.
-
-
-
-
-
-Troubleshooting
-Script creates openrgb.log but doesn't sync: Make sure the SDK server in OpenRGB is currently running on the default port (6742).
-
-Track info isn't updating: Check if your media player supports Windows System Media Transport Controls. Try adjusting the volume using media keys to see if the Windows mini-player pops up.
-
-
-
-PHOTO WILL SHOW IT SHOULD BE LOOK LIKE - 
+* **Script creates `openrgb.log` but LEDs don't sync:** Verify that the **SDK Server** inside OpenRGB is active and running on port **`6742`**.
+* **Track info isn't updating:** Ensure your media player supports **Windows System Media Transport Controls**. Try pressing a volume key to see if the song overlay pops up.
