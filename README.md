@@ -5,7 +5,7 @@ A lightweight script that syncs **OpenRGB** with whatever music player is active
 ---
 SHOWCASE : <img width="2880" height="2160" alt="image" src="https://github.com/user-attachments/assets/ff1abb2e-e9b9-4620-a63c-4d004fc10f6d" />
 
-## Before we Start 
+## Before we Start  Apply These Settings 👇
 OpenRGB > Settings > Minimize on close ✅ 
 -
 OpenRGB > Settings > Load Windows Geometry ✅
@@ -19,9 +19,9 @@ OpenRGB > Settings > Start Server ✅
 OpenRGB > Settings > Set Host `dont touch it just mark check ON ` 
 -
 OpenRGB > Settings > Set Port `dont touch it just mark check ON ` 
--
+--
 OpenRGB > Settings >Load Profile ` make your own profile with the LEDs you need to see using this script `
-
+--
 
 ## Prerequisites
 
